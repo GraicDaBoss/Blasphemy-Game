@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -58,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
 
         // Apply gravity manually
         rb.AddForce(Vector3.up * gravity, ForceMode.Acceleration);
+
+  
     }
     void OnCollisionStay(Collision collision)
     {

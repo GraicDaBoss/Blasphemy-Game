@@ -6,13 +6,17 @@ using TMPro;
 
 public class WindowTriggerEvent : MonoBehaviour
 {
+    //TRIGGERS FOR BREAKING WINDOWS!!!!!
+
     public UnityEvent enteredTrigger, exitedTrigger, stayInTrigger;
     public GameObject objectToActivate;
     public GameObject objectToDeactivate;
+    public GameObject objectToDeactivate2;
     public TextMeshProUGUI countdownText;
     private bool isInsideTrigger;
     private Coroutine holdKeyCoroutine;
-
+    public int value;
+   
     void Update()
     {
         if (isInsideTrigger && Input.GetKeyDown(KeyCode.E))
@@ -54,9 +58,13 @@ public class WindowTriggerEvent : MonoBehaviour
         if (objectToActivate != null)
         {
             objectToActivate.SetActive(true);
+            WindowCounter.instance.IncreaseWindows(1);
             if (objectToDeactivate != null)
             {
                 objectToDeactivate.SetActive(false);
+                objectToDeactivate2.SetActive(false);
+                
+
             }
         }
     }
@@ -91,5 +99,6 @@ public class WindowTriggerEvent : MonoBehaviour
             }
         }
     }
+
 }
 

@@ -12,8 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded;
     private float verticalRotation = 0;
-    public float jumpForce = 5.0f;
-    public float gravity = -1f;
+    public float jumpForce = 8.0f;
+    public float gravity = -0.5f;
 
     void Start()
     {

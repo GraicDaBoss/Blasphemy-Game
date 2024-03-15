@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class hurtyScript : MonoBehaviour
 {
-    public damage pHealth;
+    //public damage pHealth;
+    public static damage instance;
+    public float pHealth;
     public float damage;
+    void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +25,7 @@ public class hurtyScript : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
+    private void OnCollisionEnter(Collision other) 
     {
         if (other.gameObject.CompareTag("Player"))
         {

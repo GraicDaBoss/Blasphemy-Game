@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class damage : MonoBehaviour
 
 {
-    public float health;
     public float maxHealth;
+    public float health;
     public Image healthBar;
 
     // Start is called before the first frame update

@@ -40,6 +40,7 @@ public class DoorTrigger : MonoBehaviour
         }
 
         Door.SetActive(false);
+        DoorText.text = "";
         countdownText.text = ""; // Clear countdown text after action is triggered
     }
 
@@ -54,15 +55,16 @@ public class DoorTrigger : MonoBehaviour
             enteredTrigger.Invoke();
             isInsideTrigger = true;
         }
-        if(UnlockedDoor == null)
-        {
-            DoorText.text = "Hold E";
-        }
-        if (UnlockedDoor != null)
+        if (UnlockedDoor == true)
         {
             DoorText.text = "Locked";
 
         }
+        else if(UnlockedDoor == false)
+        {
+            DoorText.text = "Hold E";
+        }
+        
 
     }
 

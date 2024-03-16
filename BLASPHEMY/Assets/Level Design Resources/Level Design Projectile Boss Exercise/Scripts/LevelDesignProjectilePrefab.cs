@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 public class LevelDesignProjectilePrefab : MonoBehaviour
 {
+    
     public float projectileSpeed;
     public float projectileImpactRadius;
     public float projectileLifetime;
+    //public HealthPlayer HealthPoints;
 
     public GameObject explosionVisuals;
     // Start is called before the first frame update
@@ -50,7 +53,7 @@ public class LevelDesignProjectilePrefab : MonoBehaviour
             if (nearbyObject.tag == "Player")
             {
                 //if the sphere collides with the player, the player will take damage
-                //nearbyObject.GetComponent<PlayerHealth>().TakeDamage(10); //this requires a PlayerHealth script on the player
+                //HealthPlayer.GetComponent<HealthPoints>().TakeDamage(20); //this requires a PlayerHealth script on the player
                 Debug.Log("Player Hit!");
             }
         }

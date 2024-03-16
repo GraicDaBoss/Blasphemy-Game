@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 313793147887424768}
   - component: {fileID: 8027702136855792263}
   - component: {fileID: 5183285278446897047}
+  - component: {fileID: 3288036882027096852}
   m_Layer: 0
   m_Name: Projectile Boss
   m_TagString: Boss
@@ -213,3 +214,26 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3288036882027096852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104165522818299756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ac9a426cfc6a949b0367bcb233b3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPosition: {fileID: 0}
+  projectileCooldown: 0
+  projectileCount: 0
+  fireCooldown: 0
+  canFire: 0
+  projectileSpeed: 0
+  projectileLifetime: 0
+  projectileImpactRadius: 0
+  bossViewDistance: 0
+  projectilePrefab: {fileID: 0}
+  turnSpeed: 0

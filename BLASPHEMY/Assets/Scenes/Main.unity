@@ -2438,7 +2438,7 @@ Transform:
   m_GameObject: {fileID: 189254632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 9.07, y: -0.09, z: -1.43}
+  m_LocalPosition: {x: 9.99, y: -0.09, z: -1.43}
   m_LocalScale: {x: 11.571339, y: 5.8702, z: 5.8702}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10332,7 +10332,7 @@ PrefabInstance:
     - target: {fileID: 1269110639757668911, guid: 9a26ae0160f2440449839dccb625bc5c, type: 3}
       propertyPath: projectilePrefab
       value: 
-      objectReference: {fileID: 8940125914943821600}
+      objectReference: {fileID: 6016922657349391840, guid: dbf2baf0a369bb0429d44ba6c03e5cad, type: 3}
     - target: {fileID: 1269110639757668911, guid: 9a26ae0160f2440449839dccb625bc5c, type: 3}
       propertyPath: projectileCooldown
       value: 0.3
@@ -33257,11 +33257,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbf2baf0a369bb0429d44ba6c03e5cad, type: 3}
---- !u!1 &8940125914943821600 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6016922657349391840, guid: dbf2baf0a369bb0429d44ba6c03e5cad, type: 3}
-  m_PrefabInstance: {fileID: 4555405622496945124}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

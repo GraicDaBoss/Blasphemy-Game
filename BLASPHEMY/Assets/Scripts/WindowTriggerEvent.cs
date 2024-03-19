@@ -16,7 +16,8 @@ public class WindowTriggerEvent : MonoBehaviour
     private bool isInsideTrigger;
     private Coroutine holdKeyCoroutine;
     public int value;
-   
+
+ 
     void Update()
     {
         if (isInsideTrigger && Input.GetKeyDown(KeyCode.E))
@@ -63,11 +64,14 @@ public class WindowTriggerEvent : MonoBehaviour
             {
                 objectToDeactivate.SetActive(false);
                 objectToDeactivate2.SetActive(false);
-                
+
+
+
 
             }
         }
     }
+
 
     void OnTriggerEnter(Collider other)
     {

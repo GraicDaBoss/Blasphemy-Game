@@ -51,6 +51,7 @@ public class MilfTalk : MonoBehaviour
         OtherUI.SetActive(true);
         ClosedDooruwu.SetActive(false);
         OpenDooruwu.SetActive(true);
+        currentDialogueIndex = 0;
     }
     void StartDialogue()
     {

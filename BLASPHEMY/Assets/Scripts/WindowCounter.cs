@@ -24,15 +24,16 @@ public class WindowCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        windowHealth = totalWindows - currentwindows;
-        //currentwindows = 0;
+        
+        currentwindows = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthBar2.fillAmount = Mathf.Clamp((float)windowHealth / totalWindows, 0, 1 );
+        healthBar2.fillAmount = Mathf.Clamp((float)windowHealth / totalWindows, 0, 1);
 
+        
 
     }
 
@@ -41,7 +42,7 @@ public class WindowCounter : MonoBehaviour
     {
         currentwindows += v;
         UpdateWindowText();
-        //windowHealth = totalWindows - currentwindows;
+        windowHealth = totalWindows - currentwindows;
 
         // Check if the counter reaches a certain number and update text accordingly
         if (currentwindows >= totalWindows)

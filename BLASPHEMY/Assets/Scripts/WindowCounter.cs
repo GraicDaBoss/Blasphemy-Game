@@ -15,6 +15,7 @@ public class WindowCounter : MonoBehaviour
     public GameObject objectToActivate;
     public GameObject objectToActivate2;
     public GameObject Boss;
+    public float fartsAgain;
 
     void Awake()
     {
@@ -23,7 +24,8 @@ public class WindowCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentwindows = 0;
+        windowHealth = totalWindows - currentwindows;
+        //currentwindows = 0;
     }
 
     // Update is called once per frame
@@ -39,7 +41,7 @@ public class WindowCounter : MonoBehaviour
     {
         currentwindows += v;
         UpdateWindowText();
-        windowHealth = totalWindows - currentwindows;
+        //windowHealth = totalWindows - currentwindows;
 
         // Check if the counter reaches a certain number and update text accordingly
         if (currentwindows >= totalWindows)

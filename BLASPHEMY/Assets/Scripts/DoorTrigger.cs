@@ -32,10 +32,10 @@ public class DoorTrigger : MonoBehaviour
     IEnumerator HoldKeyCoroutine()
     {
         float holdDuration = 0f;
-        while (holdDuration < 3f)
+        while (holdDuration < 1f)
         {
             holdDuration += Time.deltaTime;
-            UpdateCountdownText(3f - holdDuration); // Update countdown text
+            UpdateCountdownText(1f - holdDuration); // Update countdown text
             yield return null;
         }
 

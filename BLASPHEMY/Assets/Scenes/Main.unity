@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4997,7 +4997,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 9.743282, y: 0.40935725, z: 8.082326}
   m_Center: {x: -6.880923, y: -0.2950433, z: 0.392457}
@@ -5053,7 +5053,7 @@ MonoBehaviour:
   windowHealth: 3
   objectToActivate: {fileID: 905221161}
   objectToActivate2: {fileID: 171276532}
-  Boss: {fileID: 0}
+  Boss: {fileID: 1390971914}
   fartsAgain: 0
 --- !u!114 &242743429
 MonoBehaviour:
@@ -10042,6 +10042,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 235688718}
+  - {fileID: 1685699646}
   m_Father: {fileID: 1265916211}
   m_LocalEulerAnglesHint: {x: 0, y: -182.089, z: 0}
 --- !u!64 &347829185
@@ -73624,6 +73625,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383908995}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1390971914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6104165522818299756, guid: 9a26ae0160f2440449839dccb625bc5c, type: 3}
+  m_PrefabInstance: {fileID: 510307323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1391647887
 GameObject:
   m_ObjectHideFlags: 0
@@ -78642,6 +78648,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677001360}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1685699645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685699646}
+  - component: {fileID: 1685699647}
+  m_Layer: 0
+  m_Name: Ramp4stairz (2)
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1685699646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685699645}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5109678, y: -0.5070873, z: -0.48878622, w: -0.49281085}
+  m_LocalPosition: {x: -4.28, y: 7.38, z: -5.08}
+  m_LocalScale: {x: 1.0001138, y: 1.0001758, z: 0.9996339}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 347829184}
+  m_LocalEulerAnglesHint: {x: 0.453, y: -267.911, z: 90}
+--- !u!65 &1685699647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685699645}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.497463, y: 4.7969723, z: 8.082326}
+  m_Center: {x: -6.503583, y: 1.8989502, z: 0.41428307}
 --- !u!1001 &1690808316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80918,11 +80977,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5554838475353125801, guid: d5e5ef4ec0b9f104fa4d30df9a631761, type: 3}
       propertyPath: gravity
-      value: -0.2
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 5554838475353125801, guid: d5e5ef4ec0b9f104fa4d30df9a631761, type: 3}
       propertyPath: jumpForce
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5554838475353125801, guid: d5e5ef4ec0b9f104fa4d30df9a631761, type: 3}
       propertyPath: m_Enabled

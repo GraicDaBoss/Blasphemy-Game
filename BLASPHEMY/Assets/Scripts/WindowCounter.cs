@@ -11,10 +11,11 @@ public class WindowCounter : MonoBehaviour
     public TMP_Text WindowText;
     public int currentwindows = 0;
     public int totalWindows = 3;
-    public int windowHealth = 0;
+    public int windowHealth = 3;
     public GameObject objectToActivate;
     public GameObject objectToActivate2;
-    
+    public GameObject Boss;
+
     void Awake()
     {
         instance = this;
@@ -28,9 +29,8 @@ public class WindowCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar2.fillAmount = Mathf.Clamp(currentwindows / totalWindows, 0, 1);
+        healthBar2.fillAmount = Mathf.Clamp((float)windowHealth / totalWindows, 0, 1 );
 
-        
 
     }
 
@@ -39,6 +39,7 @@ public class WindowCounter : MonoBehaviour
     {
         currentwindows += v;
         UpdateWindowText();
+        windowHealth = totalWindows - currentwindows;
 
         // Check if the counter reaches a certain number and update text accordingly
         if (currentwindows >= totalWindows)
@@ -46,6 +47,7 @@ public class WindowCounter : MonoBehaviour
             WindowText.text = "";
             objectToActivate.SetActive(true);
             objectToActivate2.SetActive(true);
+            Boss.SetActive(false);
 
         }
     }

@@ -11,7 +11,7 @@ public class fellatalk : MonoBehaviour
     public GameObject FellaTalkPanel, PlayerCapsule, OtherUI, FellaCamera;
     public TMP_Text FellaTalkText;
     private int currentDialogueIndex = 0;
-    private string[] dialogues = { "hey", "go break window", "" };
+    private string[] dialogues = { "Hey newbie.", "Ill go through the ground rules with you;", "Never ever open a window or create light that isnt artifical, my buddy eric made that mistake last weekend, he got a fireball to the jugular.","Heres your complimentary sheild. Boss has a bit of a temper , so this will keep you clear from the crossfire","Finally, NO MORTALS ALLOWED. Only dead ones. Enjoy!!!","" };
 
     // Start is called before the first frame update
     void Start()

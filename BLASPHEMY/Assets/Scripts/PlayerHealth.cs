@@ -52,6 +52,6 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player health decreased by: " + damage);
         }
 
-   
     }
+    
 }

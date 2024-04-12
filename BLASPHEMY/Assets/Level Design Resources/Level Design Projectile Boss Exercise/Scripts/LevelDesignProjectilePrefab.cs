@@ -46,17 +46,17 @@ public class LevelDesignProjectilePrefab : MonoBehaviour
     {
         print("exploded");
         //creates a sphere at the projectile's position with a radius of projectileImpactRadius
-        Collider[] colliders = Physics.OverlapSphere(transform.position, projectileImpactRadius);
+        //Collider[] colliders = Physics.OverlapSphere(transform.position, projectileImpactRadius);
         //checks if the sphere collides with the player object
-        foreach (Collider nearbyObject in colliders)
-        {
-            if (nearbyObject.tag == "Player")
-            {
+        //foreach (Collider nearbyObject in colliders)
+        //{
+        //    if (nearbyObject.tag == "Player")
+        //    {
                 //if the sphere collides with the player, the player will take damage
                 //HealthPlayer.GetComponent<HealthPoints>().TakeDamage(20); //this requires a PlayerHealth script on the player
-                Debug.Log("Player Hit!");
-            }
-        }
+                //Debug.Log("Player Hit!");
+        //    }
+        //}
 
         if (explosionVisuals!=null)
         {

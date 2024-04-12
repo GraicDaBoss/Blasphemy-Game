@@ -46,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Bullet"))
+        if (other.CompareTag("Bullet")) 
         {
             health -= damage;
             Debug.Log("Player health decreased by: " + damage);

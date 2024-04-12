@@ -50,12 +50,12 @@ public class LevelDesignProjectilePrefab : MonoBehaviour
         //checks if the sphere collides with the player object
         //foreach (Collider nearbyObject in colliders)
         //{
-        //    if (nearbyObject.tag == "Player")
-        //    {
+            //if (nearbyObject.tag == "Player")
+            //{
                 //if the sphere collides with the player, the player will take damage
                 //HealthPlayer.GetComponent<HealthPoints>().TakeDamage(20); //this requires a PlayerHealth script on the player
                 //Debug.Log("Player Hit!");
-        //    }
+            //}
         //}
 
         if (explosionVisuals!=null)

@@ -8,10 +8,10 @@ public class ShieldTalk : MonoBehaviour
 {
     public UnityEvent enteredTrigger, exitedTrigger;
     private bool isInsideTrigger;
-    public GameObject ShieldTalkPanel, PlayerCapsule, OtherUI, ShieldCamera;
+    public GameObject ShieldTalkPanel, PlayerCapsule, OtherUI, ShieldCamera, NPC;
     public TMP_Text ShieldTalkText;
     private int currentDialogueIndex = 0;
-    private string[] dialogues = { "well yes",  "" };
+    private string[] dialogues = { "You there!", "Be careful round these parts..", "Use the shields to get past the demon!",  "" };
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +49,7 @@ public class ShieldTalk : MonoBehaviour
         PlayerCapsule.SetActive(true);
         OtherUI.SetActive(true);
         currentDialogueIndex = 0;
+        NPC.SetActive(false);
     }
     void StartDialogue()
     {

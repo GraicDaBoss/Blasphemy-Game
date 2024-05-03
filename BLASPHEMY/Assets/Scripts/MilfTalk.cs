@@ -11,7 +11,7 @@ public class MilfTalk : MonoBehaviour
     public GameObject MilfTalkPanel, PlayerCapsule, OtherUI, MilfCamera, ClosedDooruwu, OpenDooruwu;
     public TMP_Text MilfTalkText;
     private int currentDialogueIndex = 0;
-    private string[] dialogues = { "Haven't seen you before, You must be new here", "Watch your step, its pretty dark in there. " + " Boss isn't fond of the light", "Here, I'll give you acess to the big room", "" };
+    private string[] dialogues = { "Haven't seen you before cutie, You must be new here", "Watch your step, its pretty dark in there, You know what the devil is like. " + " Boss isn't fond of the light", "Here, I'll give you acess to the big room. Be careful now, and stay out of his sight! My friend inside will tell you more.", "" };
 
     // Start is called before the first frame update
     void Start()

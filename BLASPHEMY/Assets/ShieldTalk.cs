@@ -11,7 +11,7 @@ public class ShieldTalk : MonoBehaviour
     public GameObject ShieldTalkPanel, PlayerCapsule, OtherUI, ShieldCamera, NPC;
     public TMP_Text ShieldTalkText;
     private int currentDialogueIndex = 0;
-    private string[] dialogues = { "You there!", "Be careful round these parts..", "Use the shields to get past the demon!",  "" };
+    private string[] dialogues = { "You there!", "Welcome to the HellClub. Its dangerous round here, so beware..", "Use the window shields to get past the demon bouncer! Keep an eye on your health incase he hits you...",  "" };
 
     // Start is called before the first frame update
     void Start()
